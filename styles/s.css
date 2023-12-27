@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* font */
+  --barlow-fnt: "Barlow Condensed", sans-serif;
+  --montserrat-fnt: "Montserrat", sans-serif;
+
+  /* colors */
+  --black-clr: #14130f;
+  --white-clr: #fff;
+  --crayola-clr: #00cc99;
+  --bright-grey-clr: #ebecf0;
+  --hawk-grey-clr: #77757d;
+  --dark-grey-clr: #5d5c5b;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+  letter-spacing: 1px;
+}
+
+body {
+  font-family: var(--montserrat-fnt);
+  background-color: var(--bright-grey-clr);
+  color: var(--black-clr);
+}
+
+::placeholder {
+  color: var(--hawk-grey-clr);
+  opacity: 1;
+}
+
+::-ms-input-placeholder {
+  /* Edge 12-18 */
+  color: var(--hawk-grey-clr);
+}
