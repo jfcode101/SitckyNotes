@@ -61,7 +61,7 @@ header {
   gap: 1rem;
 }
 
-.app-container {
+.app-content {
   width: 260px;
   border-radius: 2px;
   padding: 0;
@@ -100,6 +100,8 @@ header {
 
 .sticky-head {
   gap: 1rem;
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
 }
 
 .dots {
@@ -108,6 +110,8 @@ header {
 
 .sticky-bottom {
   justify-content: space-between;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
 }
 
 .bold {
@@ -135,7 +139,7 @@ header {
   margin: 0 auto;
   height: 200px;
   background: rgba(255, 255, 255, 0.7);
-  font: normal 300 1rem/1.4 var(--barlow-fnt);
+  font: normal 300 1rem/1.2 var(--barlow-fnt);
   padding: 0.5rem 1rem;
   letter-spacing: 1px;
 }
