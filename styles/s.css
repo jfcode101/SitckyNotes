@@ -78,29 +78,46 @@ header {
 .sticky-btn {
   border: none;
   outline: none;
-  width: 1rem;
-  font: normal 300 1.25rem var(--barlow-fnt);
-  background: inherit;
   display: block;
+  width: 2rem;
+  height: 30px;
+  line-height: 30px;
+  font: normal 400 1.25rem var(--montserrat-fnt);
+  background: inherit;
   cursor: pointer;
+  transition: color 0.3s ease-in-out;
 }
 
-.sticky-head,
-.sticky-btn {
-  height: 26px;
+.sticky-btn:hover {
+  color: var(--dark-grey-clr);
 }
 
 .sticky-head {
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .dots {
   margin-left: auto;
 }
 
-.sticky-bottom,
-.sticky-bottom .sticky-btn {
-  height: 34px;
+.sticky-bottom {
+  justify-content: space-between;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.italic {
+  font: italic 600 1.25rem "Courier New";
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.strikethrough {
+  text-decoration: line-through;
 }
 
 .notes {
