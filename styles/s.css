@@ -27,7 +27,7 @@ html {
 }
 
 body {
-  /* background-color: var(--crayola-clr); */
+  background-color: var(--bright-grey-clr);
   color: var(--black-clr);
 }
 
@@ -48,10 +48,6 @@ header {
   text-shadow: 2px 2px 4px var(--black-clr);
 }
 
-/* 
-
-
-*/
 .app {
   width: 95%;
   margin: auto;
@@ -65,13 +61,13 @@ header {
   width: 260px;
   border-radius: 2px;
   padding: 0;
-  background-color: violet;
-  box-shadow: 0 3px 6px var(--black-clr);
+  background-color: var(--crayola-clr);
+  box-shadow: 0 2px 4px var(--black-clr);
   transition: box-shadow 0.3s ease-in-out;
 }
 
-.app-container:hover {
-  box-shadow: 0 2px 4px var(--black-clr);
+.app-content:hover {
+  box-shadow: 0 1px 2px var(--black-clr);
 }
 
 .sticky-note {
@@ -143,11 +139,6 @@ header {
   padding: 0.5rem 1rem;
   letter-spacing: 1px;
 }
-
-/* 
-
-
-*/
 
 @media screen and (min-width: 650px) {
   .app {
