@@ -27,17 +27,112 @@ html {
 }
 
 body {
-  font-family: var(--montserrat-fnt);
-  background-color: var(--bright-grey-clr);
+  /* background-color: var(--crayola-clr); */
   color: var(--black-clr);
 }
 
-::placeholder {
-  color: var(--hawk-grey-clr);
-  opacity: 1;
+.wrapper {
+  width: 100%;
+  display: grid;
+  gap: 1rem;
 }
 
-::-ms-input-placeholder {
-  /* Edge 12-18 */
-  color: var(--hawk-grey-clr);
+header {
+  margin-top: 1rem;
+  justify-self: center;
+}
+
+.head-1 {
+  font: normal 700 2rem var(--montserrat-fnt);
+  color: var(--crayola-clr);
+  text-shadow: 2px 2px 4px var(--black-clr);
+}
+
+/* 
+
+
+*/
+.app {
+  width: 95%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 260px;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.app-container {
+  width: 260px;
+  border: 1px solid black;
+  padding: 0;
+  background-color: violet;
+}
+
+.sticky-note {
+  width: inherit;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.sticky-btn {
+  border: none;
+  outline: none;
+  width: 1rem;
+  font: normal 300 1.25rem var(--barlow-fnt);
+  background: inherit;
+  display: block;
+  cursor: pointer;
+}
+
+.sticky-head,
+.sticky-btn {
+  height: 26px;
+}
+
+.sticky-head {
+  gap: 2rem;
+}
+
+.dots {
+  margin-left: auto;
+}
+
+.sticky-bottom,
+.sticky-bottom .sticky-btn {
+  height: 34px;
+}
+
+.notes {
+  resize: none;
+  border: none;
+  outline: none;
+  display: block;
+  width: 256px;
+  margin: 0 auto;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.7);
+  font: normal 300 1rem/1.4 var(--barlow-fnt);
+  padding: 0.5rem 1rem;
+  letter-spacing: 1px;
+}
+
+/* 
+
+
+*/
+
+@media screen and (min-width: 650px) {
+  .app {
+    grid-template-columns: repeat(auto-fit, 260px);
+  }
+
+  .head-1 {
+    grid-column: 1/3;
+  }
+
+  .btn-add {
+    align-self: center;
+    justify-self: center;
+  }
 }
